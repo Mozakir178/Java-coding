@@ -1,0 +1,38 @@
+Priority Queue:
+	It is a Collection which is present in java.util package.
+	Priority Queue implements the collection and queue.
+	Similar to the TreeSet it must implements comparable interface.
+	Or it should implements Comparable.
+	Otherwise it  will give class cast exeception.
+	Priority Queue can not accept any null value.
+	when we try to print elements it print it in unsorted order.
+	but when we apply iterator it gives the elements in sequence.
+	
+	
+	Example:
+	
+	Queue<Integer> integer = new PriorityQueue<>() ;
+	Iterator itr = integer.iterator() ;
+	while(itr.hasNext()){
+		int num = itr.next() ;
+		System.out.println(num) ;
+		}
+		
+		
+LinkedList :
+	It is also a collection f/w. present in java.util package.
+	LinkedList implements the collection List and Queue.
+	It has property of List as well as Queue.
+	It can accept a null value.
+	It don't need to implements any other interface.
+	it store element in the form of node.
+	it give elements in sequence formet.
+	
+	Example:
+	
+	Queue<String> string = new LinkedList<>() ;
+	Iterator itr = string.iterator() ;
+	while(itr.hasNext()){
+		String str = itr.next() ;
+		System.out.println(str) ;
+		}

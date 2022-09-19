@@ -1,0 +1,27 @@
+
+Generics  :
+	Generics in java is very important concept.
+	It nearly make our code bug free by chacking at compiler phase.
+	Generic concept is use to make our class type safe.
+	And by using Generic concept we can even get rid of downcasting.
+	We can limit the number of data type our obj type our class can accept.
+	We need to write the type of the class in between"<>" this symbol.
+	
+	
+	
+	Example ;
+
+	class Generic<T>{
+		T data ;
+		
+		public Generic(T t){
+		this.data = t ;
+		}
+		
+		public void fun1(T data){
+		System.out.println(data) ;
+		}
+		}
+		
+		now in the above example when we will make object we can decide which type of object we want to create.
+		this is very important topic.
