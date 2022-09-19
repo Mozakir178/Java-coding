@@ -1,0 +1,34 @@
+
+
+Upper Bound : 
+
+	when we want to make our method and class generic but also want to restrict the type then we use this bound concept.
+	Upper bound is nothing but restricting the type to the current class or the child of that class.
+	When we provide upper bound then we can not call our object or method other than current class or the child of that class.
+	this is called as upper bounding.
+	
+	Example.
+		public static void upperBound(<? extands Number> t) {
+			System.out.println(t) ;
+		}
+		
+		here we can only pass data of object Number or child of Number class.
+		like Integer , Float , Double etc.
+		We can not call using String or Character.
+		
+
+Lower Bound : 
+
+	when we want to make our method and class generic but also want to restrict the type then we use this bound concept.
+	Lower bound is nothing but restricting the type to the current class or the super class of that class.
+	When we provide upper bound then we can not call our object or method other than current class or the super class of that class.
+	this is called as lower bounding.
+	
+	Example.
+		public static void lowerBound(<? super Integer> i) {
+			System.out.println(i) ;
+		}		
+		
+		here we can only pass data of object Integer or super class of Integer class.
+		like Number , Object.
+		We can not call using String or Character or Float etc.
