@@ -1,0 +1,67 @@
+
+	Exception handling:
+		When we write any java program there are 2 possibilities of program termination.
+		One is when all the code is excecuted. it is called normal termination. or grace termination.
+		Second it is it may terminate abnormally.
+		So preventing our program terminating abnormally is called as exception handling.
+		When you write any program 2 type of mistake may happen.
+		First you can make some syntactical mistake.
+		Which will be handle by compiler and our byte code will not generate.
+		But there is second case when there is no syntactical mistake but there is logical mistake.
+		This mistake will only be visible at runtime.
+		So that time jvm will generate exception.
+		And we will catch those exception to prevent abnormal termination of the program.
+		
+		
+		Some Exception in JAVA.
+		
+		Class Cast Exception:
+			This is one of the most common exception.
+			This exception is throw by jvm when we try to cast value of one class object to another class object.
+			
+			Ex:
+				Integer  i = 10 ;
+				String s = i ;
+				
+				it will throw the class cast exception.
+				
+		Null Pointer Exception:
+			When we try to perform some operation on null value then JVM throw this exception.
+			
+			Ex:
+				String s = null ;
+				System.out.println(s.length()) ;
+				
+				it will throw the Null Pointer Exception.
+				
+		Array Index Out Of Bound Exception:
+			When we try to access the index value of array which is greater than the length of array then this exception is throws by JVM.
+			
+			Ex.
+				int[] arr = new int[]{1,2,3,4} ;
+				System.out.println(arr[8]) ;
+				
+				as you can see the length of array is only 4 and we are trying to access the index number 8.
+				so it will throw the index out of bound exception.
+				
+		Arithmetic Exception:
+			When performing any Arithmetic operation if we divide any number with zero "0" then this exception will be throw.
+			
+			Ex.
+				int num1 = 15 ;
+				int num2 = 0 ;
+				
+				int num3 = num1/num2 ;
+				
+				this will throw the Arithmetic Exception.
+				
+		Input Mismatch Exception:
+			When taking input if we store wrong value in required data type then this exception will be throw.
+			
+			Ex.
+				Scanner sc = new Scanner(System.in) ;
+				int i = sc.nextInt() ;
+				
+				// if we pass any input which is not the int then this exception will be throw.
+				
+			
