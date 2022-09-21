@@ -1,0 +1,56 @@
+
+
+		
+		Checked Exception:
+			When a exception is checked by java compiler at compile time only 
+			And it is mandatory to handle that exception 
+			Than this kind of exception can be called as checked exception.
+			It is not allowed to ignore checked exception.
+			If there is any checked exception then it will not generate class file.
+			And it will give compilation error.
+			Ex.
+			
+				class Demo{
+				
+					public static void main(String[] args){
+					    try{
+							Class.forName("com.assignment.problem1.NumberException.java") ;
+						} 
+						catch(ClassNotFoundException e){
+						
+							System.out.println("this class is not found") ;
+							
+						}
+					}
+					}
+			
+			explaination :
+				Class class always need to catch ClassNotFoundException.
+				Because it is an checked exception.
+				It is not allowed to ignore checked exception.
+				
+		
+		Unchecked Exception:
+			When a exception is checked by jaba compiler but it get free pass.
+			Means when a exception is get ignore by compiler.
+			And it generate class file successfully.
+			Then this kind of exception are called as the unchecked exception.
+			When there is chance of a Unchecked exception we will still get the class file.
+			and exception will occur on runtime only.
+			
+				
+				Ex:
+					
+					class Demo{
+				
+					public static void main(String[] args){
+					    int num = 55/0 ;
+					    System.out.println(num) ;
+					}
+					}
+					
+					// This program will generate the Arithmetic Exception.
+					But we are not handaling it because it is not mendatory to handle uncheked exception.
+					Jvm can handle this exception by terminating our program.
+					
+					
