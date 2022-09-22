@@ -1,0 +1,60 @@
+
+
+Functional Interface:
+	Functional interface is nothing but interface which have only one abstract method.
+	Functional interface can have multiple default and static method.
+	But it can not have more than or less than 1 abstract method.
+	We can apply Functional programing using the lambda function.
+	Uses of functional interface is to to reduce code.
+	following are some of the example of inbuild functional interface.
+	
+	
+	Comparator:
+	Comparator interface is one of the inbuild interface of the java API.
+	it belong to java.lang package.
+	as we know that it contain only one abstract method.
+	the name of the method is compare.
+	So this can be used as functional interface.
+	
+	public interface Comparator<T> {
+	
+	public abstract int compare(T t1 , T t2) ;
+	}
+	
+	Comparable:
+	Comparable interface is also one of the inbuid interface which have only 1 abstract method.
+	The name of the method is compareTo.
+	This method is use to compare that two object are same or not.
+	We can use this interface as functional interface.
+	
+	public interface Compareble<T>{
+	
+	public abstract boolean compareTo(T t1 , T t2) ;
+	
+	}
+	
+	Iterable: 
+	Iterable is one of the interface with have only 1 abstract method.
+	The name of the method is iterator.
+	
+			public interface Iterable<T>
+		{
+		  Iterator<T>    iterator();
+		  
+		  Spliterator<T> spliterator();
+		
+		  void           forEach(Consumer<? super T> action);
+		}
+		
+	
+	Runnable:
+		Runnable is interface that is need to be impelement by a class.
+		it belongs to java.lang package.
+		it contain a abstract method called run() ;
+		so we can treat this interface as functional interface.
+		
+		public interface Runneble{
+		
+		public abstract void run()  ;
+		}
+		
