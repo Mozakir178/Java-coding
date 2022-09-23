@@ -9,3 +9,4 @@ function stockItUp(N,elements){
     console.log(sum*N) ;
   
 }
+ 
