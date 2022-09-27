@@ -1,0 +1,11 @@
+
+
+Process:
+	If two indivitual application are running symulteniously then this is caalled multi proccessing.
+	In this kind of threading programer does not handle the flow. but the processor is responcible for maintaince of the both program.
+	It is maintained by process shedular.
+	
+Thread:
+	When a perticular application is running two or more method symulteniously then this is called Thread.
+	It is controled by Thread Shedular.
+	we have some control over this kind of multithreading using some inbuld function like join(), sleep() etc.

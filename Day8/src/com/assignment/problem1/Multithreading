@@ -1,0 +1,17 @@
+
+
+	Multithreading:
+		Consider a application is runnig which contain so many method.
+		Lets say a perticular method take 2 hour to complete counting of N number.
+		as this task is getting done in backgroud.
+		Processor is in idle condition for that perticular time.
+		So when processor is in idle condition we can start some other task.
+		In that way we can utilize the idle condition of processor and it can  make our application fast.
+		This is called Multithreading.
+		
+		
+		Importance:
+			Multithreading reduce the time of our program.
+			we can utilize full potentioal of the processor.
+			This process is cheap as compair to process shedular.
+			

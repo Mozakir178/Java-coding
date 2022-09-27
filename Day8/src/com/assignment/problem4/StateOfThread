@@ -1,0 +1,23 @@
+
+
+Thread have main 5 state :
+	1- New
+	2- Runneble
+	3- Running
+	4- Blocked
+	5- Dead
+	
+	1 New State.
+		When we create a Thread this state is called as new state.
+		
+	2 Runneble State.
+		When we call start() method on any thread this state is called as Runneble state.
+		
+	3 Running State.
+		When Thread Shedular give chance to a thread than this state is called as runnable state.
+		
+	4 Blocked State.
+		When we stop a particular thread using join() , sleep() or any other method than this state is called as blocked state.
+		
+	5 Dead State.
+		When a Thread complete its all task than that thread state is called as dead state.

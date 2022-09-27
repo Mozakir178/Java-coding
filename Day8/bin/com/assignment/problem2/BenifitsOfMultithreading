@@ -1,0 +1,7 @@
+
+Benefits of Multithreading:
+	
+	It is cheap process. It does not take so much power.
+	It make our application fast.
+	It utilize the idle condition of the proccessor.
+	It provide flexibility to our program.

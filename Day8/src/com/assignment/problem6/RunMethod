@@ -1,0 +1,7 @@
+
+
+		
+		if we directly call run() method on any Runnable class
+		Then this run() method will behave as a normal method.
+		It will not run as a seprate thread.
+		Instead it will run as seprate function in the main thread only.

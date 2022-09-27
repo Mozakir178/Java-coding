@@ -1,0 +1,40 @@
+
+
+Runnable:
+	Runnable is an interface which contain the run method.
+	We need run() method to apply the concept of multithreading.
+	We implement all the logic and method we want to run simulteniously in run() method.
+	We cannot directly call run method. 
+	For that we need start() method.
+	That is why we need Thread class to call run method.
+	When we implement runneble on any class we can also implements and extends other classes and interface.
+	
+	
+	class A implements Runneble{
+	
+	public void run(){
+	
+	System.out.println("we write logic here") ;
+	}
+	}
+	
+	
+Thread class:
+	Thread is a class which is present in java.lang package.
+	Thread class also implements Runneble interface.
+	So when we extend Thread class we don't need to implements Runneble.
+	But we need to Override run method.
+	Because Thread class implemention of run() method is just empty {} ;
+	when we extends Thread class we can not extends other class.
+	So we loss very important concept of inharitance.
+	We can not use throws keyword when we use Thread class.
+	
+	
+	class A extends Thread{
+	
+	public void start() {
+	
+	run()
+	}
+	}
+	
