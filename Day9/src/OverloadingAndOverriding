@@ -1,0 +1,74 @@
+Difference between Overloading and Overriding :
+
+Overloading :- 
+
+	To achive polymorphism we use Overloading. Overloading is nothing but using the same function for the different purpuse.
+	Overloading is done at compilation phase. And it is done using different parameter.
+	
+	ex. 
+		
+		JavaCode.java 
+		--------------
+		
+		String name ;
+		
+		public void printName(){
+			System.out.println("This method will print Name ") ;
+			
+			}
+			
+		public void printName(String name){
+			this.name = name ;
+			System.out.println("This method will take a variable and print it "+name) ;
+			}
+			
+		Explanation :-
+			In the above java class you can clearly see that we have created a function named printName which is not taking any variable.
+			Now we define another variable which will take a string variable and it will set this variable to name.
+			Here you can see name of both function is same but they are working totally differently.
+			This behavier is called as Method Overloading.
+			Which method will run it will be decided at the compilation phase.
+			
+			
+Overriding:-
+		
+		Overriding is used to achive dynamic polymarphism. Dynamic polymorphism is decided at the run time. Overriding is achive with the help of inharitance.
+		Overriding is nothing but redefining the method which already present is the super class for different purpuse.
+		
+		
+		Ex.
+			Java.java 
+			--------------
+			
+			class Java{
+				String name ;
+			
+				public void overridingFunction(){
+					System.out.println(" Currently inside Java class") ;
+					
+					}
+				}
+			
+			Demo.java
+			--------------
+			
+			class Demo extends Java{
+				
+				public void overridingFunction(){
+					System.out.println("Now with the help of overriding we are in Demo class") ;
+					
+					}
+				}
+				
+			Explanation :-
+				Here you can see we have two class class 1 is Java and second is Demo class.
+				Here Demo class is child of the Java class.
+				And we have same method writen in the both class. and both are taking no variable.
+				As we are extending the Java class inside Demo class that is why overridingFunction is already availabe for Demo class.
+				But we want this method to work differently then parant class.
+				So we override this method in Demo class also.
+				Now when we will call this method this override method will be called.
+				And this will be decided at runtime.
+				This is called method Overriding.
+			
+			

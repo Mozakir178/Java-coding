@@ -1,0 +1,32 @@
+
+
+Abstract Class: 
+		Abstract class is a restricted class from which you can not make an object directly.
+		Abstract class must be extends by any child class.
+		Abstract class is used to achive half polymorphism.
+		Abstract class may or may not have an abstract method.
+		If there is any abstract method in your abstract class then this method must be override.
+		Abstract class does not support multiple inheritance.
+		Abstract class can have final non final static non static variables.
+		Abstract class can implements interface.
+		
+			Ex.
+				public abstract class AbstractClass{
+				
+				}
+
+		
+Interface:
+		Interface is also restricted.You can not create object directly.
+		Interface needs to be implements.
+		Interface can only have abstract method. after java 8 it can have static and default also.
+		Interface has only static and final variable.
+		Interface support multiple inheritance.
+		Interface can't extends any class but it can extends a interface.
+		You need to override all the abstract method of the Interface in the class which is implimenting the interface.
+		
+			Ex.
+				public abstract interface Interface{
+				
+				}
+		

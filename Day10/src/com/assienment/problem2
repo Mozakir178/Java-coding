@@ -1,0 +1,75 @@
+
+
+this keyword : 
+
+	this keyword is a reference variable in java.
+	this can be used to refer current class instance.
+	this can be used to invoke current class method.
+	this() can be used to invoke current class constructor. 
+	this can be passed as an argument in the method call.
+	this can be passed as argument in the constructor call.
+	this can be used to return the current class instance from the  method.
+	
+	
+	 EX.
+	  class Java{
+	  	 int i ;
+	  	 	
+	  	 	Java(int num ) {
+	  	 		this() ;
+	  	 		this.i = num ;
+	  	 		} ;
+	  	 	java(){
+	  	 	
+	  	 	System.out.println("Inside the constructor of the Java") ;
+	  	 	} 
+	  	 	
+	  	 	
+	  	Here we are using the this keyword in two way first we are using to call the class constructor and second we are using as current class reference.
+	  	
+	  	
+	 
+	 
+	 
+    super keyword :
+    	super keyword is also a reference variable in java.
+    	super can be used to refer immediate parent class instance variable.
+    	super can be used to invoke immediate parent class method.
+    	super() can bbe used to invoke immediate parent class constructor.
+    	
+    
+    Java.java
+    ----------------
+    	class Java{
+    		int x = 0 ;
+    		public void print(){
+    			System.out.prinln("Inside java class") ;
+    			} ;
+    			
+    		
+    		
+   Demo.java
+   -------------------
+   class Demo extends Java{
+   		
+   		Demo(){
+   		super() ;
+   		}
+   		
+   	public void printMethod(){
+   		System.out.println(super.x) ;
+   		super.print() ;
+   		}
+   		
+   	public static void main(String[] args ){
+   		Demo d1 = new Demo() ;
+   		d1.printMethod() ;
+   		} ;
+   		
+   	Here we have used all three usage of the super keyword firs we have used the super keyword to refer to the instance variable of the parent class of the Demo class.
+   	Then we have used the super keyword to refer the method of the parent class.
+   	Third we have used the super keyword to create the parent class object.
+   	
+    		
+	  	 	
+	  	 
